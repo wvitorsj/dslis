@@ -29,6 +29,5 @@ public class GameService {
        List<Game> result = gameRepository.findAll();
        
        return result.stream().map(x -> new GameMinDTO(x)).toList();
-    }
-    
+    }    
 }
